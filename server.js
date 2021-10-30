@@ -2,6 +2,8 @@ const express = require("express");
 const router = express.Router();
 const cors = require("cors");
 const nodemailer = require("nodemailer");
+require('dotenv').config()
+
 
 const app = express();
 app.use(cors());
@@ -13,7 +15,7 @@ const contactEmail = nodemailer.createTransport({
     service: 'gmail',
     auth: {
       user: "testingcontactform123@gmail.com",
-      pass: "TEST!!!!",
+      pass: `${process.env.REACT_APP_SECRET}`,
     },
   });
   
