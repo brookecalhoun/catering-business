@@ -42,3 +42,5 @@ const Form = () => {
 };
 
 export default Form;
+
+// thank you to https://w3collective.com/react-contact-form/ for the code 
