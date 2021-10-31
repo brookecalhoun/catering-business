@@ -1,10 +1,14 @@
 import './App.css';
-import Form from './components/Form'
+import Menu from './pages/Menu';
+import Contact from './pages/Contact';
+import Reviews from './pages/Reviews';
 
 function App() {
   return (
     <div className="App">
-      <Form />
+      <Menu />
+      <Contact />
+      <Reviews />
     </div>
   );
 }
